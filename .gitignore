@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+*/node_modules/
+venv/
+*/venv/
+.venv/
+*/.venv/
+
+# Environment Variables - NEVER COMMIT SECRETS
+.env
+*.env
+!.env.example
+client/.env
+server/.env
+ml-service/.env
+
+# Build outputs
+dist/
+client/dist/
+build/
+*.egg-info/
+
+# Python cache & artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.uv_cache/
+
+# Uploads & local storage (keep folder structure, exclude user PDFs)
+server/uploads/resumes/*
+!server/uploads/resumes/.gitkeep
+server/bin/
+*.exe
+
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
